@@ -23,10 +23,15 @@ const DisplayLists = () => {
     {error && <p>Error: {error}</p>}
 
   return (
-    <div>
+    <div className="w-full h-screen bg-[#121315]">
         <div className="header-img">
             
         </div>
+
+        <div className="w-full h-full px-4">
+
+        <div className="bg-[#1c1d1f] w-full max-w-[700px] mx-auto rounded-md px-6 py-4 mt-[-10rem]">
+            
 
         {data ? (
             data.map((coffee)=>(
@@ -35,6 +40,11 @@ const DisplayLists = () => {
         ): (
             <p>Loading</p>
         )}
+        </div>
+
+        </div>
+
+
       
     </div>
   )
