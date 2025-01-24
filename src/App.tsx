@@ -1,8 +1,9 @@
+import DisplayLists from "./components/DisplayLists"
 
 const App = () => {
   return (
-    <div className="bg-red-500">
-      Hello World
+    <div>
+     <DisplayLists />
     </div>
   )
 }
