@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Coffee } from "../types/type";
 import { FetchCoffee } from "../api/FetchCoffe";
 
+
 const DisplayLists = () => {
   const [data, setData] = useState<Coffee[] | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -30,9 +31,9 @@ const DisplayLists = () => {
 
       <div className="w-full h-full px-4">
         <div className="bg-[#1c1d1f] w-full max-w-[700px] mx-auto rounded-md px-6 py-4 mt-[-10rem] text-white flex flex-col gap-4">
-          <div>
-            <h1>Our Collection</h1>
-            <p>
+          <div className="text-center">
+            <h1 className="text-3xl font-bold">Our Collection</h1>
+            <p className="text-">
               Introducing our Coffee Collection, a selection of unique coffees
               from different roast types and origins, expertly roasted in small
               batches and shipped fresh weekly.
@@ -42,7 +43,7 @@ const DisplayLists = () => {
               <button>Available Now</button>
             </div>
           </div>
-          <div className="flex flex-col gap-4 w-full">
+          <div className="flex flex-col gap-[4rem] w-full">
             {data ? (
               data.map((coffee) => {
                 const { image, price, name, rating, id, popular, available } = coffee;
@@ -59,7 +60,15 @@ const DisplayLists = () => {
                         <span>{price}</span>
                       </p>
                       <div>
-                        <p>{rating}</p>
+                        {rating ? (
+                          <p className="flex items-center">
+                            <img src="/images/Star_fill.svg" alt="" />
+                          <span>{rating}</span>
+                          </p>): (
+                          <p className="flex items-center">
+                            <img src="/images/Star.svg" alt="" />
+                            <span>No Rating</span>
+                          </p>)}
                       </div>
                     </div>
                   </div>
