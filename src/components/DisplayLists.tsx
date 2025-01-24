@@ -31,16 +31,16 @@ const DisplayLists = () => {
 
       <div className="w-full h-full px-4">
         <div className="bg-[#1c1d1f] w-full max-w-[700px] mx-auto rounded-md px-6 py-4 mt-[-10rem] text-white flex flex-col gap-4">
-          <div className="text-center">
+          <div className="text-center flex flex-col gap-4">
             <h1 className="text-3xl font-bold">Our Collection</h1>
-            <p className="text-">
+            <p className="text-[#63676f]">
               Introducing our Coffee Collection, a selection of unique coffees
               from different roast types and origins, expertly roasted in small
               batches and shipped fresh weekly.
             </p>
-            <div>
-              <button>All Products</button>
-              <button>Available Now</button>
+            <div className="flex items-center gap-4 justify-center">
+              <button className="p-2 bg-[#4d5562] rounded-md cursor-pointer hover:opacity-90">All Products</button>
+              <button className="p-2 bg-[#4d5562] rounded-md cursor-pointer hover:opacity-90">Available Now</button>
             </div>
           </div>
           <div className="flex flex-col gap-[4rem] w-full">
