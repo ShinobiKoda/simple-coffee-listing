@@ -20,10 +20,14 @@ const DisplayLists = () => {
 
     console.log(data);
 
-
+    {error && <p>Error: {error}</p>}
 
   return (
     <div>
+        <div className="header-img">
+            
+        </div>
+
         {data ? (
             data.map((coffee)=>(
                 <p key={coffee.id}>{coffee.name}</p>
