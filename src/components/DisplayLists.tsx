@@ -102,11 +102,11 @@ const DisplayLists = () => {
                         )}
                       </div>
                       <div className="flex flex-col gap-1 w-full">
-                        <p className="w-full flex items-center justify-between">
+                        <p className="w-full flex items-center justify-between font-semibold">
                           <span>{name}</span>
                           <span className="p-1 bg-[#9dbba8] text-black font-semibold rounded-md">{price}</span>
                         </p>
-                        <div className="flex justify-between items-center">
+                        <div className="flex justify-between items-center font-semibold">
                           <div className="flex gap-1">
                             {rating ? (
                               <p className="flex items-center">
@@ -119,7 +119,7 @@ const DisplayLists = () => {
                                 <span>No Rating</span>
                               </p>
                             )}
-                            {votes && (
+                            {votes>0 && (
                               <span className="text-[#63676f]">
                                 ({votes} votes)
                               </span>
@@ -128,7 +128,7 @@ const DisplayLists = () => {
                           <div>
                             {
                               !available && (
-                                <span className="text-red-600">Sold Out</span>
+                                <span className="text-red-600 font-semibold">Sold Out</span>
                               )}
                           </div>
                         </div>
