@@ -14,6 +14,10 @@ body{
     height: 100%;
 }
 
+body{
+  background-color: #121315;
+}
+
 .header-img {
   background: url(/images/bg-cafe.jpg);
   background-size: cover;

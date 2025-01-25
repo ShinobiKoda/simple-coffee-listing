@@ -25,14 +25,14 @@ const DisplayLists = () => {
   }
 
   return (
-    <div className="w-full bg-[#121315] lg:h-screen">
+    <div className="w-full bg-[#121315] h-full">
       <div className="header-img"></div>
 
-      <div className="w-full h-full px-4">
-        <div className="bg-[#1c1d1f] w-full mx-auto rounded-md px-6 py-7 mt-[-10rem] text-white flex flex-col gap-4">
+      <div className="w-full h-full px-6 max-w-[1440px] mx-auto">
+        <div className="bg-[#1c1d1f] w-full mx-auto rounded-md px-8 py-7 mt-[-10rem] text-white flex flex-col gap-4 h-full">
           <div className="text-center flex flex-col gap-4">
             <h1 className="text-3xl font-bold">Our Collection</h1>
-            <p className="text-[#63676f]">
+            <p className="text-[#63676f] w-full max-w-[600px] mx-auto">
               Introducing our Coffee Collection, a selection of unique coffees
               from different roast types and origins, expertly roasted in small
               batches and shipped fresh weekly.
