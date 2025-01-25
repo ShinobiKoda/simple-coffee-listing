@@ -4,6 +4,7 @@ export interface Coffee{
     image: string;
     price: string;
     rating: number;
+    votes: number;
     popular: boolean;
     available: boolean;
 }

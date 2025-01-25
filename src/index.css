@@ -15,7 +15,7 @@ body{
 }
 
 .header-img {
-  background: url(/public/images/bg-cafe.jpg);
+  background: url(/images/bg-cafe.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -24,19 +24,19 @@ body{
 }
 
 @media screen and (min-width: 600px) {
-  /* .header-img {
+  .header-img {
     background: url(/public/images/bg-cafe-sm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
     width: 100%;
-    height: 10rem;
-  } */
+    height: 15rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .header-img {
-    background: url(/public/images/bg-cafe-lg.jpg);
+    background: url(/images/bg-cafe-lg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
