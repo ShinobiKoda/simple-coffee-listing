@@ -48,7 +48,7 @@ const DisplayLists = () => {
     <div className="w-full bg-[#121315] h-full">
       <div className="header-img"></div>
 
-      <div className="w-full h-full px-6 max-w-[1440px] mx-auto">
+      <div className="w-full h-full px-6 max-w-[1440px] mx-auto py-8">
         <div className="bg-[#1c1d1f] w-full mx-auto rounded-md px-8 py-7 mt-[-10rem] text-white flex flex-col gap-4 h-full">
           <div className="text-center flex flex-col gap-4">
             <h1 className="text-3xl font-bold">Our Collection</h1>
